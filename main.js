@@ -7,6 +7,7 @@ calculateBtn.addEventListener("click", () => {
 
 worker.onmessage = (message) => {
     console.log(message)
+    console.log(JSON.parse(message.data))
 }
 
 function calculate () {
